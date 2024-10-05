@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All products-Bling Club</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked{
+  color: orange;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="https://th.bing.com/th/id/R.b71e042fc297ae4a3cdd8087ab907497?rik=nxfVyxzL3DlPCQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1802%2f2337%2fproducts%2fbling_20logo_20no_20background_1024x1024.png%3fv%3d1487867563&ehk=bFSnEz9qMc3VETN5PNbeWx5uLK%2b42xcNzcR1oS6Bc%2bQ%3d&risl=&pid=ImgRaw&r=0" width="125px">
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="index.html">About</a></li>
+<li><a href="index.html">Contact</a></li>
+<li><a href="Login-Reg.html">Account</a></li>
+</ul>
+</nav>
+<img src="https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg" alt="" height="30px" width="30px">
+<img src="https://th.bing.com/th/id/OIP.MO13Yb2PjehyQD7s6Lsx_gHaHa?pid=ImgDet&rs=1" class="menu-icon" onclick="menutoggle()">
+</div>
+</div>
+<!------cart items details------->
+<div class="small-container cart-page">
+<table>
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Subtotal</th>
+</tr>
+<tr>
+<td>
+<div class="cart-info">
+<img src="https://www.giva.co/cdn/shop/products/PD01781_1_1024x1024.jpg?v=1681994565"height="100" width="100">
+<div>
+<p>Necklace</p>
+<small>Price:94015</small>
+<br>
+<a href="">Remove</a>
+</div>
+</div>
+</td>
+<td><input type="number" value="1"></td>
+<td>Rs.94015</td>
+</tr>
+
+<tr>
+<td>
+<div class="cart-info">
+<img src="https://i.pinimg.com/736x/f4/7c/bd/f47cbd76d193341c823f211ac2bb023a--kareena-kapoor-khan-lipstick.jpg"height="100" width="100">
+<div>
+<p>Earrings</p>
+<small>Price:45015</small>
+<br>
+<a href="">Remove</a>
+</div>
+</div>
+</td>
+<td><input type="number" value="1"></td>
+<td>Rs.45015</td>
+</tr>
+
+<tr>
+<td>
+<div class="cart-info">
+<img src="https://www.manekratna.com/webimage/product/Antique-Necklace-NS-3900Mo-110.jpg"height="100" width="100">
+<div>
+<p>Wedding Set</p>
+<small>Price:85015</small>
+<br>
+<a href="">Remove</a>
+</div>
+</div>
+</td>
+<td><input type="number" value="1"></td>
+<td>Rs.85015</td>
+</tr>
+</table>
+<div class="total-price">
+<table>
+<tr>
+<td>Subtotal</td>
+<td>Rs.224045</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>Rs.3045</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>Rs.227090</td>
+</tr>
+</table>
+<br>
+</div>
+</div>
+<center><a href="order.html" class="btn">Order &#8594;</a></center>
+<!-----js for toggle menu----->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+	
+    MenuItems.style.maxHeight = "0px";
+	
+    function menutoggle() {
+        if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight="0px"
+           }
+    }
+</script>
+</body>
+</html>
